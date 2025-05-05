@@ -54,3 +54,16 @@ htmlcov/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# cmake
+build/
+*CMakeFiles/
+Makefile
+CTestTestfile.cmake
+CMakeCache.txt
+bin/
+lib/
+cmake_install.cmake
+install_manifest.txt
+cmake_uninstall.cmake
+cmake_uninstall.cmake.in
