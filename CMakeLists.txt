@@ -16,6 +16,14 @@ find_package(Threads REQUIRED)
 find_package(Protobuf REQUIRED)
 find_package(gflags REQUIRED)
 
+
+# 设置Muduo编译选项（关闭测试和样例，根据需要调整）
+set(MUDUO_BUILD_EXAMPLES OFF CACHE BOOL "")
+set(MUDUO_BUILD_TESTS OFF CACHE BOOL "")
+
+# 添加子模块
+add_subdirectory(third_party/muduo)
+
 # Include directories
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
